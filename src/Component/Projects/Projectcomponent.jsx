@@ -3,20 +3,21 @@ import './Projectcomponent.css'
 
 const Projectcomponent = () => {
 
+
 const Projects = [
     {
         title : "SkyPaper",
         description : "A dynamic app that displays weather updates and news articles based on the searched city.",
         techStack : ["React", "API Integration", "CSS"],
         codeLink : "https://github.com/Jawith-Mousin/skypaper-website",
-        image: "../../../Public/skypaper-website-image-of-paris.png",
+        image: "/Public/Static/skypaper-website-image-of-paris.png",
     },
     {
         title: "Expense Management",
         description: "A simple and efficient expense tracking system with category-wise spending insights.",
         techStack: ["React", "Redux", "Firebase"],
         codeLink: "https://github.com/Jawith-Mousin/expense-management",
-        image: "../../../Public/Expense-management-website-image.jpeg",
+        image: "/Public/Static/Expense-management-website-image.jpeg",
       },
 ]
 

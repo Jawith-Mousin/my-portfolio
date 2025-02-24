@@ -14,8 +14,8 @@ const Footercomponent = () => {
         <div className='footer-content'>
         <p className='footer-copyrights'>© 2025 Portfolio. All rights reserved.</p>
         <div className="footer-navigation">
-           <a href="https://www.linkedin.com/in/mohamed-jawith-mousin-419728234/" target='_blank' ><img  className="footer-icon" src="../../../Public/linkedin-icon-png.png" alt="Linked-In-Logo" target="_blank" onClick="https://storyset.com/people?utm_source=chatgpt.com" /></a>
-           <a href="https://github.com/Jawith-Mousin" target='_blank'><img  className='footer-icon'  src="../../../Public/github-logo.png" alt="GitHub-Logo" /></a>
+           <a href="https://www.linkedin.com/in/mohamed-jawith-mousin-419728234/" target='_blank' ><img  className="footer-icon" src={"/Public/Static/linkedin-icon-png.png"} alt="Linked-In-Logo" target="_blank" onClick="https://storyset.com/people?utm_source=chatgpt.com" /></a>
+           <a href="https://github.com/Jawith-Mousin" target='_blank'><img  className='footer-icon'  src={"/Public/Static/github-logo.png"} alt="GitHub-Logo" /></a>
         </div>
         </div>
         <button className="back-to-top" onClick={scrollToTop}>
