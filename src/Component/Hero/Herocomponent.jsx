@@ -25,7 +25,7 @@ return (
             </div>
       </div>
        <div className='img-container'>
-        <img src={'/Static/dev-productivity.svg'} alt='Developer-animation' className='hero-image'/>
+        <img src='/assets/devproductivity.svg' alt='Developer-animation' className='hero-image'/>
        </div>
     </div>
   )
