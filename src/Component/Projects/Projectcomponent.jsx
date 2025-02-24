@@ -10,14 +10,14 @@ const Projects = [
         description : "A dynamic app that displays weather updates and news articles based on the searched city.",
         techStack : ["React", "API Integration", "CSS"],
         codeLink : "https://github.com/Jawith-Mousin/skypaper-website",
-        image: "/Static/skypaper-website-image-of-paris.png",
+        image: "/assets/skypaper-website-image-of-paris.png",
     },
     {
         title: "Expense Management",
         description: "A simple and efficient expense tracking system with category-wise spending insights.",
         techStack: ["React", "Redux", "Firebase"],
         codeLink: "https://github.com/Jawith-Mousin/expense-management",
-        image: "/Static/Expense-management-website-image.jpeg",
+        image: "/assets/Expense-management-website-image.jpeg",
       },
 ]
 
