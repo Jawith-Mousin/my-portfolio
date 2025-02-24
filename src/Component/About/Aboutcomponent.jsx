@@ -6,7 +6,7 @@ const Aboutcomponent = () => {
   return (
     <div className='about-component-container'>
       <div className='image-container'>
-      <DotLottieReact className='img-animation'  src="/Public/Static/Animation - 1740295145856.json" loop autoplay/>
+      <DotLottieReact className='img-animation'  src="/Static/Animation - 1740295145856.json" loop autoplay/>
       </div>
       <div className='Right-sidepart'>  
       <div className='About-me'>
