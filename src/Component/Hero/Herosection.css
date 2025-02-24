@@ -1,0 +1,174 @@
+.hero-section-container
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    margin: 0px 50px 0px 0px;
+    padding: 90px 0px 40px 0px;
+    background: linear-gradient(135deg, #080808, #0d0d2b, #12033b);
+}
+
+.hero-section-inner-container
+{
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    width: 90%;
+    padding: 50px 0px 0px 10px;
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.2);
+    margin: 50px;
+    z-index: 1;
+}
+
+.hero-section-name
+{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-left: 50px;
+    background: linear-gradient(90deg, #00f7ff, #ff0080);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px 15px rgba(0, 255, 255, 0.2);
+}
+
+.hero-section-title
+{
+    margin: 0px 0px 40px 0px;
+    font-size: 40px;
+    padding: 0px 0px 20px 50px;
+    opacity: 0.9;
+}
+
+.hero-section-tagline
+{
+    font-size: 20px;
+    padding: 0px 0px 0px 50px;
+    opacity: 0.8;
+    font-weight: 400;
+}
+
+.hero-section-button-container {
+    display: flex;
+    gap: 20px;
+    padding:50px 0px 30px 40px;
+}
+
+.hero-section-contact-btn,
+.hero-section-view-btn {
+    padding: 10px 24px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+.hero-section-contact-btn {
+    background: linear-gradient(135deg, #00f7ff, #0088ff);
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.7);
+}
+
+.hero-section-view-btn {
+    background: linear-gradient(135deg, #ff0080, #ff0040);
+    box-shadow: 0px 0px 15px rgba(255, 0, 128, 0.7);;
+}
+
+.hero-section-contact-btn::before,
+.hero-section-view-btn::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.5s ease-in-out;
+    transform: rotate(25deg);
+}
+
+.hero-section-contact-btn:hover,
+.hero-section-view-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.3);
+}
+
+.hero-section-contact-btn:hover::before,
+.hero-section-view-btn:hover::before {
+    top: 100%;
+    left: 100%;
+}
+
+.hero-image
+{
+    width: 100%;
+    height: auto;
+    animation: float 4s ease-in-out infinite;
+    z-index: -1;
+    
+}
+
+.img-container
+{
+    margin: 0px;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.menu-icon
+{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .hero-section-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 15px;
+        z-index: 1;
+    }
+
+    .menu-icon
+    {
+    display:block;
+    }
+
+    .hero-section-name {
+        font-size: 38px;
+        margin-right: 40px;
+    }
+
+    .hero-section-title {
+        font-size: 24px;
+        margin-right: 40px;
+    }
+
+    .hero-section-tagline {
+        font-size: 16px;
+        margin-right: 40px;
+    }
+
+    .hero-section-button-container {
+        flex-direction: column;
+        margin-right: 40px;
+    }
+    .hero-image
+    {
+    width: 0%;
+    height: auto;
+   }
+}

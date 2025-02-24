@@ -1,0 +1,109 @@
+.header-component {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(15, 15, 15, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 10px 30px;
+}
+
+.header-title {
+    font-size: 32px;
+    text-shadow: 2px 2px 12px rgba(255, 255, 255, 5);
+    color: white;
+}
+
+/* Desktop Navigation */
+.header-navigation {
+    display: flex;
+    gap: 20px;
+}
+
+.header-navigation ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.header-navigation li {
+    list-style: none;
+    padding: 20px 30px 20px 20px;
+    cursor: pointer;
+    color: #fff;
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.header-navigation li:hover {
+    color: #00f7ff;
+    text-shadow: 0px 0px 8px #00f7ff;
+    transform: scale(1.1);
+}
+
+.header-navigation li::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background-color: #00f7ff;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.header-navigation li:hover::after {
+    width: 90%;
+    left: 0;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .header-navigation {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.9);
+        width: 250px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 234, 255, 0.6);
+        display: none; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-navigation.active {
+        display: flex;
+    }
+
+    .header-navigation ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-navigation li {
+        display: block;
+        padding: 15px;
+        width: 100%;
+    }
+}
